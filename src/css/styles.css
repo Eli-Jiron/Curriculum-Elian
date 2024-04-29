@@ -1,40 +1,106 @@
 body{
-    margin: 100px;
+    margin: 60px;
 }
 
 .superior {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid red;
-}
-
-.medio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 2px solid rgb(0, 255, 128);
-}
-
-.inferior {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 2px solid rgb(0, 30, 255);
+    border: 3.5px solid #c8c8c8;
+    margin-bottom: 40px;
 }
 
 .contenido-superior {
     display: grid;
     grid-template-columns: 1fr;
     text-align: end;
-    border: 2px solid yellow
+    margin: 20px;
+}
+
+.medio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.medio-izqda {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.medio-dcha {
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 .contenido-medio {
     display: grid;
     grid-template-columns: 1fr;
-    border: 2px solid lightpink;
+    margin: 20px;
+}
+
+.inferior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .contenido-inferior{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 2px solid orange;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: calc(.9em + 1vw);
+}
+
+.bcolor{
+    background-color: #d6d6d6;
+}
+
+.fuente-medio-ttlo{
+    font-family: monospace;
+    font-weight: bolder;
+    color: #474845;
+    font-size: calc(1.1em + 1vw);
+}
+
+.fuente-medio-izqda{
+    font-family: monospace;
+    color: #676666;
+    font-size: calc(.4em + 1vw);
+    line-height: 1.7em;
+    margin-left: 10px;
+}
+
+.fuente-medio-dcha{
+    font-family: monospace;
+    color: #676666;
+    font-size: calc(.4em + 1vw);
+    line-height: 1.3em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fuente-medio{
+    font-family: monospace;
+    font-size: calc(.44em + 1vw);
+    font-weight: bolder;
+    color: #474845;
+}
+
+.border-medio-izqdo{
+    border-left: 3px solid #777777;
+}
+
+.border-medio-dcho{
+    border-bottom: 3px solid #777777;
+}
+
+.superior-img{
+    position: absolute;
+    margin-bottom: 250px;
+
+
+}
+
+#sudperior-img-size{
+    height: fit-content;
 }
