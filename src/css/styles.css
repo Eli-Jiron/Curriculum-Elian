@@ -165,6 +165,12 @@ body{
     margin: 100px;
 }
 
+.funcionalidad {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
 #like , #dislike {
     background-color: transparent;
     border: 0px;
@@ -188,5 +194,4 @@ body{
 .botones{
     display: flex;
     align-items: center;
-    margin-top: 10px;
 }
