@@ -195,3 +195,23 @@ body{
     display: flex;
     align-items: center;
 }
+
+#comentario , #correo , #enviar {
+    font-family: monospace;
+    font-weight: bolder;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#comentario-ttl{
+    background-color: white;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: calc(.18em + 1vw);
+    width: 75.5%;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-bottom: 3px;
+}
