@@ -156,11 +156,11 @@ body{
     font-size: calc(.7em + 1vw);
 }
 
-body > div {
+.bcolor1{
     border: 2px solid black; 
     background-color: white;
 }
 
-body > div > div {
+.bcolor1 > div {
     margin: 100px;
 }
