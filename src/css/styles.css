@@ -164,3 +164,29 @@ body{
 .bcolor1 > div {
     margin: 100px;
 }
+
+#like , #dislike {
+    background-color: transparent;
+    border: 0px;
+}
+
+#like > img , #dislike > img {
+    background-color: white;
+    border-radius: 50%;
+    width: 80%;
+}
+
+#contador {
+    background-color: white;
+    width: 45px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: monospace;
+    font-size: calc(1em + 1vw);
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
