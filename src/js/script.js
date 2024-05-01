@@ -5,6 +5,7 @@ let dislike = document.getElementById('dislike');
 let correo = document.getElementById("correo");
 let comentario = document.getElementById("comentario");
 let enviar = document.getElementById("enviar");
+let mostrar = document.getElementById("mostrar");
 
 let valiCorreo = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
@@ -20,12 +21,12 @@ dislike.addEventListener('click', function () {
 
 enviar.addEventListener('click', function () {
     if (correo.value == "" || comentario.value == "") {
-        alert('Debe llenar todos los campos')
+        mostrar.innerHTML ='Debe llenar todos los campos';
     } else {
         if (!valiCorreo.test(correo.value)) {
-            alert('Ingrese un correo valido')  
+            mostrar.innerHTML ='Ingrese un correo valido';
           } else {
-            alert('¡Se ha enviado su comentario!\n' + 'Correo: ' + correo.value + '\n' + 'Comentario: ' + comentario.value)
+            mostrar.innerHTML ='¡Se ha enviado su comentario! <br>' + 'Correo: ' + correo.value + '<br>' + 'Comentario: ' + comentario.value;
           }
     }
-})
+});
