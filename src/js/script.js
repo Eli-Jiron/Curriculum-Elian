@@ -25,7 +25,7 @@ enviar.addEventListener('click', function () {
         if (!valiCorreo.test(correo.value)) {
             alert('Ingrese un correo valido')  
           } else {
-            alert('¡Se ha enviado su comentario!')
+            alert('¡Se ha enviado su comentario!\n' + 'Correo: ' + correo.value + '\n' + 'Comentario: ' + comentario.value)
           }
     }
 })
