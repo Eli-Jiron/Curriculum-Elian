@@ -21,12 +21,21 @@ dislike.addEventListener('click', function () {
 
 enviar.addEventListener('click', function () {
     if (correo.value == "" || comentario.value == "") {
-        mostrar.innerHTML ='Debe llenar todos los campos';
+        alert('Debe llenar todos los campos');
     } else {
         if (!valiCorreo.test(correo.value)) {
-            mostrar.innerHTML ='Ingrese un correo valido';
+            alert('Ingrese un correo valido');
           } else {
-            mostrar.innerHTML ='¡Se ha enviado su comentario! <br>' + 'Correo: ' + correo.value + '<br>' + 'Comentario: ' + comentario.value;
+            const nuevoDiv = document.createElement("div");
+            const nuevoDiv2 = document.createElement("div");
+
+            nuevoDiv.innerHTML = "Correo: " + correo.value;
+            nuevoDiv2.innerHTML = "Comentario: " + comentario.value;
+
+            nuevoDiv.classList.add('comentarios');
+
+            mostrar.appendChild(nuevoDiv);
+            mostrar.appendChild(nuevoDiv2);
           }
     }
 });

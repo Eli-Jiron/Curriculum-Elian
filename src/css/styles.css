@@ -221,3 +221,7 @@ body{
     border: 2px solid black;
     border-radius: 5px;
 }
+
+.comentarios {
+    margin-top: 10px;
+}
