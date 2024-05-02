@@ -20,7 +20,9 @@ dislike.addEventListener('click', function () {
 });
 
 enviar.addEventListener('click', function () {
-    if (correo.value == "" || comentario.value == "") {    } else {
+    if (correo.value == "" || comentario.value == "") {
+        alert('Debe llenar todos los campos');
+    } else {
         if (!valiCorreo.test(correo.value)) {
             alert('Ingrese un correo valido');
           } else {
@@ -29,6 +31,8 @@ enviar.addEventListener('click', function () {
 
             nuevoDiv.innerHTML = "Correo: " + correo.value;
             nuevoDiv2.innerHTML = "Comentario: " + comentario.value;
+
+            nuevoDiv.classList.add('comentarios');
 
             mostrar.appendChild(nuevoDiv);
             mostrar.appendChild(nuevoDiv2);

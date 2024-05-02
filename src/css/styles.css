@@ -220,5 +220,8 @@ body{
     background-color: white;
     border: 2px solid black;
     border-radius: 5px;
-    margin-bottom: 10px;
+}
+
+.comentarios {
+    margin-top: 10px;
 }
